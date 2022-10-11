@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles.css">
+    <script src="https://kit.fontawesome.com/a3bc9cd331.js" crossorigin="anonymous">     
+    </script>
+    <title>PrimeParland Practice</title>
+    <link rel="stylesheet" href="/asset/css/bootstrap.css">
+    <link rel="stylesheet" href="/asset/css/bootstrap.min.css">
+    <link rel="stylesheet" href="/asset/css/bootstrap.min2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome.min.css">
+</head>
+<body onload = "ourResearch()">
+    <div class="header">
+       
+        <div class="logo">
+            <img src="images/logo.png" width="100%"/>
+        </div>
+
+        <div class="menu">
+            <nav>
+                <ul>
+                    <li>
+                        <a href="#">Home</a>
+                    </li>
+                    <li>
+                        <a href="#">About</a>
+                    </li>
+                    <li>
+                        <a href="#">Properties</a>
+                    </li>
+                    <li>
+                        <a href="#">FAQ</a>
+                    </li>
+                    <li>
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="sign">
+            <div>
+                <button class="signinb"><span class="glyphicon glyphicon-lock"></span> LogIn</button>    
+            </div>
+            <div>
+                <button class="signupb">Sign Up <span class="glyphicon glyphicon-user"></span></button> 
+            </div>
+        </div>
+
+    </div> <!--Header End-->
+<br><br><br><br>
+<div class="rent">
+        <div class="rent2">
+            <h1>Easy Rent with <span style="color: red;">Prime</span></h1><h1><span style="color: red;">Parkland</span> Payment!</h1> 
+            <p>Prime Parkland limited is a leading prop-tech company, providing real
+                estate solutions and services to our clients.
+            </p>
+            <br>
+            </p>
+            <button class="rent2btn">Learn More  <span class="glyphicon glyphicon-arrow-right fs-4"></span>
+            </button>
+            </p>
+    </div>
+    
+    <div class="aniDiv" class="rent3">
+        <div>
+            <img src="images/img-banner.png" width="80%"/> 
+        </div>
+    </div><!--Animation end-->
+</div>
+
+     <div class="research">
+       <h1>  Our Research</h1>
+       <hr style="width: 50px; height: 2px; background-color: red; border: none; margin: auto;">
+     </div>
+   <br>
+<div class="rbox">
+    <div class="rentBoxHolder">
+        <div>
+            <img src="images/our-reach-icon-houses-rent.png"  width="30%" height="100%"/> 
+            <h1 id = "rent"></h1>
+            <h4>House for Rent</h4>
+        </div>
+    </div>
+    <div class="rentBoxHolder">
+        <div>
+            <img src="images/our-reach-icon-houses-purchase.png" width="30%" height="100%"/> 
+            <h1 id="purchase"></h1>
+            <h4>House for Purchase</h4>
+        </div>
+    </div>
+   <div class="rentBoxHolder">
+    <di>
+        <img src="images/our-reach-icon-agent.png" width="30%" height="100%"/> 
+        <h1 id="agent"></h1>
+        <h4>Agent</h4>
+    </div>
+   </div>
+</div> <!--box end-->
+
+<script>
+    function ourResearch(){
+        let rent = document.getElementById("rent");
+        let purchase = document.getElementById("purchase");
+        let agent = document.getElementById("agent");
+
+    //for Rent
+    let count = 0;
+    setInterval(() => {
+        if(count == 5000){
+            clearInterval();
+        }else{
+            count++;
+            rent.innerHTML = count;
+        }
+        
+    }, 0.5);
+
+    //for Purchase
+    let counter = 0;
+    setInterval(() => {
+        if(counter == 1000){
+            clearInterval();
+        }else{
+            counter++;
+            purchase.innerHTML = counter;
+        }
+        
+    }, 0.1);
+
+    //for Agent
+    let c = 0;
+    setInterval(() => {
+        if(c == 500){
+            clearInterval();
+        }else{
+            c++;
+            agent.innerHTML = c;
+        }
+        
+    }, 0.05);
+
+    }
+</script>
+
+
+<div class="prodservice">
+    <h1>Products & Servives</h1>
+    <hp>Our Products are designed and developed based on emperical facts and figures obtain from research done, to meet our customers needs.</p>
+    
+        <hr style="width: 50px; height: 2px; background-color: red; border: none; margin: auto;">
+    </div>
+    <div style="width: 30%;"></div>
+</div>
+
+<br><br>
+<div class="gallery">
+    <div class="gallhold">
+ 
+    <div id="b1"  class="gallbox">
+        <div class="text-1">
+            <a href ="#">Description: Allows You to pay your house rent monthly.
+            </a>
+        </div>
+    
+        <div class="gallshow">
+            Easy Rent
+        </div>
+    </div>
+
+    <div id ="b2"class="gallbox">
+        <div class="text-2">
+            <a href ="#">Description: We will furnish and equip your apartment and you will pay us back monthly.
+            </a>
+        </div>
+        <div class="gallshow">
+            Easy Rent Extra
+        </div>
+    </div>
+
+    <div id="b3" class="gallbox">
+        <div class="text-3">
+            <a href ="#">Description: Allows you to acquire commercial apartment easy by paying monthly rent.
+            </a>
+        </div>
+        <div class="gallshow">
+            Easy Comm Rent
+        </div>
+    </div>
+
+    <div id="b4" class="gallbox">
+        <div class="text-4">
+            <a href ="#">Description: Allows you pay your house rent annually.
+            </a>
+        </div>
+        <div class="gallshow">
+            Just Rent
+        </div>
+    </div>
+
+    </div> 
+</div>
+    
+<br>
+<div class="gallery">
+  <div class="gallhold">
+
+    <div id="b5" class="gallbox">
+       <div class="text-5">
+            <a href ="#">Description: We buy your dream home for you and you pay us back monthly
+            </a>
+        </div>
+        <div class="gallshow">
+            Rent2Own
+        </div>
+    </div>
+
+    <div id="b6" class="gallbox">
+        <div class="text-6">
+            <a href ="#">Description: We buy your dream home for you and furnish it while you pay us back monthly.
+            </a>
+        </div>
+        <div class="gallshow">
+            Rent2Own Plus
+        </div>
+    </div>
+    <div id="b7" class="gallbox">
+        <div class="text-7">
+            <a href ="#">Description: We build a low cost houses using modern technology to bring down cost and sell to the public.
+            </a>
+        </div>
+        <div class="gallshow">
+            Low Cost Housing
+        </div>
+    </div>
+    <div  id="text-7" class="gallbox">
+        <div id="t-7">
+            <h2>Let's Get You<br> Started!</h2> 
+            <p><button class="text-7button">Sign Up <span class="glyphicon glyphicon-log-in"></span></button></p>
+        </div> 
+    </div>
+    </div>  
+</div>
+<!--Gallery end-->
+
+<br><br><br>
+<div class="research">
+    <h1>How it works</h1>
+    <hr style="width: 50px; height: 2px; background-color: red; border: none; margin: auto;">
+</div>
+<br>
+  <div class="howitworks">
+      <div class="howitworkshold">
+
+        <div class="howWorkBoxHold" >
+            <div class="howitworksbox ani1"> 
+                <div class="smallBall">
+                    1
+                </div>
+                <img src="images/icon-work001.png" width="50%" alt="icon-work-1"/>
+            </div>
+            <div  class="text">
+                <h2>Register</h2>
+                <p>Customer Sign up on the Platform</p>
+            </div>
+        </div> 
+
+        <div class="arrow1" style="background-color:#fff6f6;">
+            <img src="images/arrow (1).png" width="100%" alt="icon-work-2"/>
+         </div>
+
+        <div class="howWorkBoxHold ">
+            <div class="howitworksbox ani2"> 
+                <div class="smallBall">
+                    2
+                </div>
+                <img src="images/icon-work2.png" width="50%" alt="icon-work-2"/>
+            </div>
+            <div  class="text">
+                <h2>Get Verified</h2>
+                <p>Customer wait for assessment details and get verified</p>
+            </div>
+        </div> 
+        
+            <div class="arrow2" style="background-color:#fff6f6;">
+                <img src="images/arrow.png" width="100%" alt="icon-work-2"/>
+         </div>
+        
+         <div class="howWorkBoxHold">
+            <div class="howitworksbox ani3"> 
+                <div class="smallBall">
+                    3
+                </div>
+                <img src="images/icon-work5.png" width="60%" alt="icon-work-3"/> 
+            </div>
+            <div  class="text">
+                <h2>Make Payment</h2>
+                <p>Platform pay for the property to landlord / property seller</p>
+            </div>
+        </div>  
+  </div>
+</div>
+  <!--end-->
+
+ 
+  <center><button class="buttonLearnMore">Learn More <span class="glyphicon glyphicon-arrow-right fs-4"></span></button></center>
+
+<div class="clientsay">
+    <div class="clientsayhold1">
+        <h1>What Our Clients Says</h1>
+        <hr style=" margin-left:0px; width: 80px; height: 2px; background-color: red; border: none;">
+        
+        <br><br>
+              <div class="scroll">
+                <div class="saybox">  
+                    John Olamide<br><br>
+                    We need financial support for paying for my two year rent in 2021,
+                    Prime Parkland came at the right time to support us. we recommend them.
+                  
+                </div>
+                <div class ="saybox">
+                    Chioma Nwaeze<br><br>
+                    We are the sure plug for anything concernig property purchase,
+                    unfront rent payment suport, and property management with 
+                    professional touch, They deliver with promise.
+                </div>
+              </div>
+    </div>
+    <div class="clientsayhold2">
+        <div>
+            <center><h1>Explore Prime Parkland</h1></center>
+            <hr style=" width: 80px; height: 2px; background-color: red; border: none; margin: auto; margin-bottom: 20px;">
+            <div class="explani">
+                <p><button class="explorebutton">View List of properties</button></p>
+                <p><button class="explorebutton">Frequently ask Questions</button></p>
+                <p><button class="explorebutton">Contact Us</button></p>
+            </div>
+        </div>
+    </div>
+</div><!--Client say end-->
+
+<div class="subscribe">
+    
+    <div class="subText">
+        <h1>Subscribe To Prime Parkland Newsletter</h1>
+    <hp>Stay in touch with the latest news and releases</hp>
+    </div>
+    <div class="subbutton">
+        <div>
+            <input required type="tex" placeholder="Enter your email address"/>
+        </div>
+        <div class="subtext">
+            <button>Subscribe</button>
+        </div>
+    </div>
+    <hr class="hrline">
+</div>
+
+<div class="footer">
+    <div class="footerholder">
+        <div class="footerbox">
+            <div class="footerlogo">
+                <img src="images/footer-logo.png" alt="logo" width="100%">
+                Prime Parkland limited is a prop-tech leading real estate company, and we are engaged in various aspects of real estate, providing real estate solutions and services to our clients.
+            </div>
+            <div class="social">
+                <div class="socialhold">
+                <div class="socialiconhold">
+                    <img src="images/instagram.png" width="60%" height="60%" alt="Instagram"/>
+                </div>
+                <div class="socialiconhold">
+                    <img src="images/facebook.png" width="60%" height="60%" alt="facebook"/>
+                </div>
+                <div class="socialiconhold">
+                    <img src="images/whatsapp.jpg" width="60%" height="60%" alt="whatsapp"/>
+                </div>
+                <div class="socialiconhold">
+                    <img src="images/twitter.png" width="60%" height="60%" alt="twitter"/>
+                </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footerholder">
+        <div class="footerbox">
+            <h3>Company</h3>
+            <p>About Us</p>
+            <p>Properties</p>
+            <p>Contact Us</p>
+        </div>
+    </div>
+    <div class="footerholder">
+        <div class="footerbox">
+            <h3>Resources</h3>
+            <p>FAQS</p>
+            <p>Terms of Use</p>
+            <p>Privacy Policy</p>
+        </div>
+    </div>
+    <div class="footerholder">
+        <div class="footerbox">
+            <h3>Account</h3>
+            <p>Log In</p>
+            <p>Sign Up</p>
+        </div>
+    </div>
+</div>
+
+<!--Open Menu-->
+<div class="openMenu">
+    <button onclick="myOpenFunction()"><img src="images/menuicon.png" width="30px" height="30px" alt="menu icon"></button>
+</div>
+
+<!--Hiden menu-->
+<div class="hiddenmenu"  id="hiddenmenu">
+    <button class="closebutton" onclick="myCloseFunction()">
+        <img src="images/closeicon.png" width="30" height="30" alt="close icon"/>
+    </button>
+    <p>
+        <a href="#">Home</a>
+    </p>
+    <hr>
+    <p>
+        <a href="#">About</a>
+    </p>
+    <hr>
+    <p>
+        <a href="#">Properties</a>
+    </p>
+    <hr>
+    <p>
+        <a href="#">FAQ</a>
+    </p>
+    <hr>
+    <p>
+        <a href="#">Contact</a>
+    </p>
+    <hr>   
+  
+
+<button type="button" class="hiddensignup" id="hiddensignup">
+    Sign Up
+</button>
+   
+</div>
+
+
+<script>
+    function myOpenFunction() {
+    let open = document.getElementById('hiddenmenu');
+    if(open.style.display === 'block'){
+        open.style.display = 'none';
+    }else{
+        open.style.display = 'block';
+    }
+    };
+
+    function myCloseFunction() {
+    let close = document.getElementById('hiddenmenu');
+    if(close.style.display === 'none'){
+        close.style.display = 'block';
+    }else{
+        close.style.display = 'none';
+    }
+    };
+</script>
+
+<!--Anination script-->
+<script>
+    let date = new Date();
+    let year = date.getFullYear();
+    document.getElementById("date").innerHTML = year;
+   </script>
+</div>
+<script>
+    function animation (){
+        var reveal = document.querySelectorAll(
+            ".ani1, .ani2, .ani3, .arrow1, .arrow2 "
+        );
+    
+        for(var i = 0; i < reveal.length; i++){
+            var windowHeight = window.innerHeight;
+            var elementTop = reveal[i].getBoundingClientRect().top;
+            var elementVisible = 150;
+            if(elementTop < windowHeight - elementVisible){
+                reveal[i].classList.add("active");
+            }else{
+                reveal[i].classList.remove("active");
+            }
+        }
+    }
+    window.addEventListener("scroll", animation);
+    </script>
+    
+
+<script src="/asset/js/bootstrap.bundle.min.js"></script>
+<script src="/asset/js/bootstrap.js"></script>
+<script src="/asset/js/bootstrap.min.js"></script>
+</body>
+</html>
+
